@@ -16,5 +16,10 @@ boolean isOpen = true;
         int availableBookCount = bookCount - borrowedBookCount;
         IO.println(availableBookCount);
 
+        String firstName = "Jane";
+        String lastName = "Doe";
+        String fullName = firstName + " " + lastName;
+        IO.println("Välkommen till " + libraryName + ", " + fullName + "!");
+
     }
 }
