@@ -31,8 +31,12 @@ boolean isOpen = true;
             IO.println("Inga böcker kvar att låna, tyvärr. ");
         } else if (availableBookCount <=3){
             IO.println("Nästan slut på böcker. Skynda dig.");
-        } else{
-            IO.println("Det finns många böcker kvar.");
+        } else {
+            IO.println("Det finns många böcker kvar.");}
+        for (int i = 1; i <= bookCount; i++){
+            IO.println("bok " + i);
         }
+
     }
+
 }
