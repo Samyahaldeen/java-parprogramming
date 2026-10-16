@@ -7,7 +7,7 @@ public class Main {
 
 String libraryName = "Stockholms University library";
 int bookCount = 12;
-boolean isOpen = true;
+boolean isOpen = false;
         IO.println(libraryName);
         IO.println(bookCount);
         IO.println(isOpen);
@@ -20,6 +20,12 @@ boolean isOpen = true;
         String lastName = "Doe";
         String fullName = firstName + " " + lastName;
         IO.println("Välkommen till " + libraryName + ", " + fullName + "!");
+
+        if (isOpen){
+            IO.println("Välkommen In");
+        }else{
+            IO.println("Tyvärr är bibiolteket stängt nu");
+        }
 
     }
 }
