@@ -33,10 +33,17 @@ boolean isOpen = true;
             IO.println("Nästan slut på böcker. Skynda dig.");
         } else {
             IO.println("Det finns många böcker kvar.");}
+
         for (int i = 1; i <= bookCount; i++){
             IO.println("bok " + i);
         }
 
+        printHeading();
+
+    }
+
+    private static void printHeading(){
+        IO.println("Bibliotekets översikt");
     }
 
 }
