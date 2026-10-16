@@ -12,5 +12,9 @@ boolean isOpen = true;
         IO.println(bookCount);
         IO.println(isOpen);
 
+        int borrowedBookCount = 8;
+        int availableBookCount = bookCount - borrowedBookCount;
+        IO.println(availableBookCount);
+
     }
 }
