@@ -7,12 +7,12 @@ public class Main {
 
 String libraryName = "Stockholms University library";
 int bookCount = 12;
-boolean isOpen = false;
+boolean isOpen = true;
         IO.println(libraryName);
         IO.println(bookCount);
         IO.println(isOpen);
 
-        int borrowedBookCount = 8;
+        int borrowedBookCount = 12;
         int availableBookCount = bookCount - borrowedBookCount;
         IO.println(availableBookCount);
 
@@ -24,8 +24,15 @@ boolean isOpen = false;
         if (isOpen){
             IO.println("Välkommen In");
         }else{
-            IO.println("Tyvärr är bibiolteket stängt nu");
+            IO.println("Tyvärr är biblioteket stängt just nu.");
         }
 
+        if(availableBookCount == 0) {
+            IO.println("Inga böcker kvar att låna, tyvärr. ");
+        } else if (availableBookCount <=3){
+            IO.println("Nästan slut på böcker. Skynda dig.");
+        } else{
+            IO.println("Det finns många böcker kvar.");
+        }
     }
 }
